@@ -288,7 +288,8 @@
 				<Part Id="12" String="PART_L_WING"/>
 			</Parts>
 		</Monster>
-        <Monster Id="13">
+        <Monster Id="13"
+		         Size="1866.05">
             <Crowns Gold="123"
                     Silver="115"
                     Mini="90"/>
@@ -298,6 +299,7 @@
             <Weaknesses>
                 <Weakness Name="Thunder"/>
                 <Weakness Name="Dragon"/>
+                <Weakness Name="Ice"/>
             </Weaknesses>
             <Parts>
                 <Part Id="0" String="PART_HEAD"/>
