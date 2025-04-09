@@ -63,7 +63,7 @@
                            Foreground="{StaticResource WHITE_50}">
                     <Run Text="Lv."
                          FontWeight="SemiBold"
-                         Foreground="{StaticResource WHITE_400}"
+                         Foreground="{StaticResource WHITE_50}"
                          FontSize="10" />
                     <Run d:Text="180"
                          Text="{Binding MasterRank, Mode=OneWay}"
@@ -119,7 +119,7 @@
                          Text="{Binding Bar.Percentage, Converter={StaticResource DoubleFlooringConverter}, StringFormat=\{0:F0\}}" /><!--
                  --><Run d:Text=".4%"
                          Text="{Binding Bar.Percentage, Converter={StaticResource DoubleToDecimalConverter}, StringFormat=\.\{0:D2\}\%}"
-                         Foreground="{StaticResource WHITE_500}"
+                         Foreground="{StaticResource WHITE_50}"
                          FontSize="11"
                          FontWeight="Normal" />
                 </TextBlock>
@@ -128,11 +128,11 @@
                 <TextBlock Grid.Column="1"
                    Grid.Row="0"
                    VerticalAlignment="Center"
-                   HorizontalAlignment="Right"
+                   HorizontalAlignment="Left"
                    Margin="0,0,2,0">
                     <Run Text="DPS"
-                         Foreground="{StaticResource WHITE_400}"
-                         FontSize="10"
+                         Foreground="{StaticResource WHITE_50}"
+                         FontSize="12"
                          FontWeight="SemiBold"/>
                     <Run d:Text="100.0"
                          Text="{Binding DPS, Mode=OneWay, StringFormat=\{0:F1\}}"
@@ -140,21 +140,21 @@
                          FontWeight="Medium"/><!--
                  --><Run Text="/s"
                          FontSize="9"
-                         Foreground="{StaticResource WHITE_400}"/>
+                         Foreground="{StaticResource WHITE_50}"/>
                 </TextBlock>
 
                 <!-- Total Damage -->
                 <TextBlock Grid.Column="1"
                    Grid.Row="1"
                    VerticalAlignment="Center"
-                   HorizontalAlignment="Right"
+                   HorizontalAlignment="Left"
                    Margin="0,0,2,0">
             <Run Text="DMG"
-                 Foreground="{StaticResource WHITE_400}"
-                 FontSize="10"
+                 Foreground="{StaticResource WHITE_50}"
+                 FontSize="12"
                  FontWeight="SemiBold"/>
-            <Run d:Text="10.0K"
-                 Text="{Binding Damage, Mode=OneWay, Converter={StaticResource IntToKFormat}}"
+            <Run d:Text="26,354"
+                 Text="{Binding Damage, Mode=OneWay}"
                  Foreground="{StaticResource WHITE_50}"
                  FontWeight="Medium"/>
                 </TextBlock>

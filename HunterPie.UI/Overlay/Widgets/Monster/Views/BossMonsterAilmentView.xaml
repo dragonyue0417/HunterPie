@@ -24,7 +24,7 @@
         </Grid.RowDefinitions>
         <TextBlock d:Text="AILMENT_1"
                    Text="{Binding Name, Converter={StaticResource RiseMonsterAilmentIdToNameConverter}}"
-                   Foreground="{StaticResource WHITE_100}"
+                   Foreground="{StaticResource WHITE_50}"
                    FontFamily="{StaticResource HUNTERPIE_DEFAULT_FONT}"
                    FontWeight="Medium"
                    VerticalAlignment="Center"
@@ -103,5 +103,28 @@
                    HorizontalAlignment="Center"
                    Margin="0,18,0,0" 
                    Grid.Row="1"/>
+        <!-- Timer/Buildup text -->
+        <TextBlock Foreground="{StaticResource WHITE_50}"
+           FontFamily="{StaticResource HUNTERPIE_DEFAULT_FONT}"
+           FontSize="12"
+           VerticalAlignment="Bottom"
+           HorizontalAlignment="Center"
+           Margin="0,40,0,0"
+           Grid.Row="1">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black"
+                          BlurRadius="2"
+                          ShadowDepth="0"/>
+            </TextBlock.Effect>
+            <Run Text="{Binding Buildup, StringFormat=\{0:F0\}}"
+            d:Text="2000"/><!--
+            --><Run Text="/"
+            Foreground="{StaticResource WHITE_50}"
+            FontWeight="Light"/><!--
+            --><Run Text="{Binding MaxBuildup, StringFormat=\{0:F0\}}"
+            Foreground="{StaticResource WHITE_50}"
+            FontWeight="Light"
+            d:Text="2000"/>
+         </TextBlock>
     </Grid>
 </UserControl>

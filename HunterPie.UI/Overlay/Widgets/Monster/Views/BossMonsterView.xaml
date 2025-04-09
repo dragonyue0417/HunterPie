@@ -221,9 +221,9 @@
                            d:Text="Dodogama"
                            VerticalAlignment="Top"
                            HorizontalAlignment="Left"
-                           Foreground="{StaticResource HUNTERPIE_FOREGROUND_PRIMARY}"
+                           Foreground="{StaticResource WHITE_50}"
                            FontFamily="{StaticResource HUNTERPIE_DEFAULT_FONT}"
-                           FontSize="15">
+                           FontSize="16">
                     <TextBlock.Effect>
                         <DropShadowEffect Color="Black"
                                       BlurRadius="4" 
