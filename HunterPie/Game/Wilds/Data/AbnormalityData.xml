@@ -413,6 +413,20 @@
                      Index="15"
                      IsBuildup="True"
                      MaxBuildup="100" />
+        <Abnormality Id="Debuffs.16.Small"
+                     Name="ABNORMALITY_BUBBLES"
+                     Icon="ICON_BUBBLE"
+                     Index="16"
+                     Offset="34"
+                     DependsOn="30"
+                     WithValue="1" />
+        <Abnormality Id="Debuffs.16.Large"
+                     Name="ABNORMALITY_BUBBLES_PLUS"
+                     Icon="ICON_BUBBLE+"
+                     Index="16"
+                     Offset="34"
+                     DependsOn="30"
+                     WithValue="2" />
     </Debuffs>
     <Palico>
         <Abnormality Id="Palico.0" />
@@ -464,6 +478,7 @@
                      Offset="50"/>
         <Abnormality Id="Skills.115"
                      Name="ABNORMALITY_BURST"
+                     Icon="ICON_ATTACKUP"
                      Offset="60"/>
         <Abnormality Id="Skills.184"
                      Name="ABNORMALITY_GUARDIANS_PROTECTION"
@@ -482,6 +497,10 @@
         <Abnormality Id="Skills.114"
                      Name="ABNORMALITY_COALESCENCE"
                      Offset="C8"/>
+        <Abnormality Id="Skills.118"
+                     Name="ABNORMALITY_BLANGONGA_SPIRIT"
+                     Icon="ICON_ATTACKUP"
+                     Offset="E0"/>
         <Abnormality Id="Skills.154"
                      Name="ABNORMALITY_UTH_DUNA_COVER"
                      Offset="D0"/>
